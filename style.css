@@ -347,6 +347,7 @@ span {
     }
 
     .about {
+        height: 200vh;
         text-align: center;
     }
 
