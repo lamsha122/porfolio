@@ -136,6 +136,7 @@ span {
     color: lightblue;
     font-size: 40px;
     padding-bottom: 20px;
+    animation: animation 3s linear infinite;
 } 
 
 .about p {
@@ -143,6 +144,15 @@ span {
     font-size: large;
     font-family: sans-serif;
     padding-bottom: 20px;
+}
+
+@keyframes animation {
+    from {
+        color: lightblue;
+    }
+    to {
+        color: rgb(83, 83, 83);
+    }
 }
 
 .btn {
@@ -192,15 +202,14 @@ span {
 }
   
 .portfolio-box img {
-    width: 30vw;
-    height: 200px;
+    width: 25vw;
+    height: 150px;
     transition: 0.5s ease;
     filter: brightness(30%);
 }
   
 .portfolio-box:hover img {
     transform: scale(1.1);
-
 }
   
 .portfolio-box .portfolio-layer {
@@ -225,7 +234,19 @@ span {
 }
   
 .portfolio-layer p {
-    font-size: 20px;
+    font-size: 15px;
+}
+
+.portfolio-box .hidden {
+    display: none;
+}
+
+.portfolio button {
+    width: 130px;
+    height: 30px;
+    margin: 20px;
+    color: rgba(0, 0, 0, 0.719);
+    border-radius: 20px;
 }
 
 .contact {
@@ -242,7 +263,7 @@ span {
 .info {
     width: 20vw;
     height: auto;
-    font-size: large;
+    font-size: medium;
 }
 
 .contact form input-box {
@@ -347,7 +368,6 @@ span {
     }
 
     .about {
-        height: 200vh;
         text-align: center;
     }
 
